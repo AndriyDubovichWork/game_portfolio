@@ -8,7 +8,7 @@ import { Car } from './models/Car';
 const App = () => {
 	return (
 		<Canvas>
-			<ambientLight intensity={0.9} />
+			<ambientLight intensity={1} />
 			<spotLight position={[10, 15, 10]} angle={0.3} intensity={1} />
 			<OrbitControls />
 			<Car />
