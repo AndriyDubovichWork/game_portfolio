@@ -9,8 +9,9 @@ import { movement } from '../Logic/Car/movement';
 
 const App = () => {
 	const [x, setX] = useState(0);
+	const [y, setY] = useState(0);
 
-	document.onkeydown = (e) => movement(x, setX, e);
+	document.onkeydown = (e) => movement(x, setX, y, setY, e);
 
 	return (
 		<Canvas>
@@ -23,7 +24,7 @@ const App = () => {
 
 			<Plane args={[100, 100]} rotation-x={-Math.PI / 2}></Plane>
 
-			<Car position={[0, 0.25, x]} />
+			<Car position={[y, 0.25, x]} />
 
 			<Stars />
 			{/* camera*/}
