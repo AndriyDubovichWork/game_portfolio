@@ -9,7 +9,7 @@ export const movement = (
 	// const MoveForce = speed * delta * x;
 	console.log(e.code);
 
-	// fuck this stupid app
+	// fuck this stupid app use proper tools for proper tasks
 	switch (e.code) {
 		case 'KeyW':
 			setX(x + speed);
